@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turtel-App", "Turtel-App.csproj", "{BDC5CB50-DDC2-49A4-904F-7AF301B626F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtel-App-Tests", "..\Turtel-App-Tests\Turtel-App-Tests.csproj", "{FDE7AD41-2B4E-4E33-9DFA-60C943C4DDDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtel-Test", "..\Turtel-Test\Turtel-Test.csproj", "{1F542DBB-79E7-452F-8451-C6A3F7B7F622}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{BDC5CB50-DDC2-49A4-904F-7AF301B626F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDC5CB50-DDC2-49A4-904F-7AF301B626F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDC5CB50-DDC2-49A4-904F-7AF301B626F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FDE7AD41-2B4E-4E33-9DFA-60C943C4DDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDE7AD41-2B4E-4E33-9DFA-60C943C4DDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDE7AD41-2B4E-4E33-9DFA-60C943C4DDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDE7AD41-2B4E-4E33-9DFA-60C943C4DDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F542DBB-79E7-452F-8451-C6A3F7B7F622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F542DBB-79E7-452F-8451-C6A3F7B7F622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F542DBB-79E7-452F-8451-C6A3F7B7F622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F542DBB-79E7-452F-8451-C6A3F7B7F622}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
