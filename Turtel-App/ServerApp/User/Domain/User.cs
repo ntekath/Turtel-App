@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Turtel_App.ServerApp.User.Domain
 {
@@ -29,10 +31,38 @@ namespace Turtel_App.ServerApp.User.Domain
             Preferences = preferences ?? throw new ArgumentNullException(nameof(preferences));
         }
 
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
+        Guid Guid { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Required]
         public Account? Account { get; private set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Required]
         public Gallery? Gallery { get; private set; }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        [Required]
+        public Presentation? Presentation { get; }
+
         public ICollection<User> Matches { get; }
         public ICollection<Preference> Preferences { get; }
-        public Presentation? Presentation { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="user"></param>
+        public void Match(User user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
