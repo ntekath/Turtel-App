@@ -1,0 +1,25 @@
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+
+.header #logo {
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.header a #help {
+    position: absolute;
+    top: 10px;
+    border-radius: 25px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}
