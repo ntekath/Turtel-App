@@ -2,5 +2,6 @@
 {
     public class Feedback
     {
+        public Guid Id { get; }
     }
 }
