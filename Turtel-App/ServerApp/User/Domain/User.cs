@@ -6,6 +6,32 @@ namespace Turtel_App.ServerApp.User.Domain
 {
     public class User
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        Guid Guid { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Required]
+        public Account? Account { get; private set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Required]
+        public Gallery? Gallery { get; private set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Required]
+        public Presentation? Presentation { get; }
+
+        public ICollection<User> Matches { get; }
+        public ICollection<Preference> Preferences { get; }
+
+
         public User()
         {
             Account = null;
@@ -31,30 +57,7 @@ namespace Turtel_App.ServerApp.User.Domain
             Preferences = preferences ?? throw new ArgumentNullException(nameof(preferences));
         }
 
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
-        Guid Guid { get; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [Required]
-        public Account? Account { get; private set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [Required]
-        public Gallery? Gallery { get; private set; }
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        [Required]
-        public Presentation? Presentation { get; }
-
-        public ICollection<User> Matches { get; }
-        public ICollection<Preference> Preferences { get; }
 
         /// <summary>
         /// 
