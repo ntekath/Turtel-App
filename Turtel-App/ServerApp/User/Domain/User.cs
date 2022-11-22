@@ -8,7 +8,7 @@ namespace Turtel_App.ServerApp.User.Domain
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        Guid Guid { get; }
+        public Guid Guid { get; }
 
         /// <summary>
         /// 
