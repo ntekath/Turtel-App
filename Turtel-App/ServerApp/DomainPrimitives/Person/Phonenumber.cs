@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Turtel_App.ServerApp.DomainPrimitives
+namespace Turtel_App.ServerApp.DomainPrimitives.Person
 {
     [Serializable]
     public struct Phonenumber

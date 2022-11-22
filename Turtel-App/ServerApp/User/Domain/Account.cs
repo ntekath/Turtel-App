@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Turtel_App.ServerApp.DomainPrimitives;
+using Turtel_App.ServerApp.DomainPrimitives.Person;
 
 namespace Turtel_App.ServerApp.User.Domain
 {
