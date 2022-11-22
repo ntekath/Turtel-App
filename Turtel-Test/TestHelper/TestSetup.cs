@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Turtel_App.ServerApp.Certification;
 
-namespace RobotSwarms.TestHelper
+namespace TurtelTest.TestHelper
 {
     internal class TestSetup : IDisposable
     {
@@ -18,9 +18,6 @@ namespace RobotSwarms.TestHelper
 
 
         private List<DbContext> dbContexts = new List<DbContext>();
-
-        public readonly Guid StartSystem;
-        public ICollection<Guid?> Systems { get; private set; }
 
         private static readonly object syncRoot = new();
         private static volatile bool initialized;

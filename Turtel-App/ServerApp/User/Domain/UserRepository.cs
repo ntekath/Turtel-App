@@ -13,7 +13,7 @@ namespace Turtel_App.ServerApp.User.Domain
 
         public User? FindByGuid(Guid guid) =>
             (from User user in Users
-             where user.Id == guid
+             where user.Guid == guid
              select user).FirstOrDefault();
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotSwarms.TestHelper.Generator
+namespace TurtelTest.TestHelper.Generator
 {
     internal class CharGenerator : Generator<char>
     {
