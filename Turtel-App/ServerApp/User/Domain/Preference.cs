@@ -7,10 +7,11 @@ namespace Turtel_App.ServerApp.User.Domain
     public class Preference
     {
         [Required]
-        private string PreferenceType { get; set; }
+        public string PreferenceType { get; }
 
         [Required]
-        private string PreferenceCategory { get; set; }
+        public string PreferenceCategory { get; }
+
 
         public Preference()
         {
