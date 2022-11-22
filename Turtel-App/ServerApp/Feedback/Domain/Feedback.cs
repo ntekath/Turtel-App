@@ -8,7 +8,7 @@ namespace Turtel_App.ServerApp.Feedback.Domain
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; }
+        public Guid Id { get; private set; }
 
         [Required]
         public string Info { get; set; }
