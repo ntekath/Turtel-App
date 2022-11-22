@@ -6,6 +6,10 @@ namespace Turtel_App.ServerApp.User.Domain
     [ComplexType]
     public class Preference
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; private set; }
+
         [Required]
         public string PreferenceType { get; }
 

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using Turtel_App.ServerApp.DomainPrimitives.Data;
@@ -6,8 +7,9 @@ using Turtel_App.ServerApp.DomainPrimitives.Data;
 namespace Turtel_App.ServerApp.User.Domain
 {
     [ComplexType]
+    [Owned]
     public class Gallery
-    {       
+    {
         Image? ProfileImage { get; set; }
 
         [Required]

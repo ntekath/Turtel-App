@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Turtel_App.ServerApp.DomainPrimitives.Person;
 
@@ -6,6 +7,7 @@ namespace Turtel_App.ServerApp.User.Domain
 {
 
     [ComplexType]
+    [Owned]
     public partial class Account
     {
         [Required]

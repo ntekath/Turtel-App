@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Turtel_App.ServerApp.User.Domain
 {
     [ComplexType]
+    [Owned]
     public class Presentation
     {
         string? Text { get; set; }
