@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import { Route } from 'react-router';
-import Register from './components/Register';
+import {SafeAreaView, StyleSheet, Text, View, Image} from 'react-native';
+import {Register} from './components/Register';
+import {PhoneNumber} from './components/PhoneNumber';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+const Stack = createNativeStackNavigator();
 
 export default class App extends Component {
   static displayName = App.name;
 
   render () {
     return (
-        <View style={styles.viewAll}>
-          <Register />
-        </View>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{headerShown: true}}>
+          <Stack.Screen name="Register" component={Register} options={{ headerShown: false }}/>
+          <Stack.Screen name="PhoneNumber" component={PhoneNumber} options={{ headerShown: false }}/>
+        </Stack.Navigator>
+      </NavigationContainer>
     );
   }
+   
 }
 
 const styles = StyleSheet.create({

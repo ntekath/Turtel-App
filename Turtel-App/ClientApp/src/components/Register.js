@@ -1,64 +1,59 @@
-﻿import React, { Component } from 'react';
-import {StyleSheet, View, Text, Image, Pressable} from 'react-native';
-import logo from '../images/logo-png.png';
-import taube_left from '../images/taube_register_left_png.png';
-import taube_right from '../images/taube_register_right_png.png';
-import OwnButton from './Button.js';
+﻿import React from 'react';
+import {StyleSheet, SafeAreaView, View, Text, Image, Pressable} from 'react-native';
+import Logo from '../images/logo.jsx';
+import TaubeLeftSVG from '../images/taube_left.jsx';
+import TaubeRightSVG from '../images/taube_right.jsx';
+import OwnButton from './TurtelButton';
+import {PhoneNumber} from './PhoneNumber';
 
-export default class Register extends Component {
-
-    render() {
-        return (
-            <View style={style.contentRegister}>
-                <Image source={logo} style={style.logoRegister}/>
-                <View style={style.tauben}>
-                    <Image source={taube_left} style={style.taubeLeft}/>
-                    <Image source={taube_right} style={style.taubeRight}/>
-                </View>
-                <View style={style.signin}>
-                <OwnButton name="Registrieren" style={style.registerButton}/>
-                    <Text style={style.signinRegisterText}>Du bist schon registriert?</Text>
-                    <Pressable style={style.signinButton}>
-                        <Text style={style.signinButtonText}>Anmelden</Text>
-                    </Pressable>
-                </View>
+export function Register({navigation}) {
+    return (
+        <SafeAreaView style={style.contentRegister}>
+           <View style={style.logoRegister}>
+                <Logo />
+           </View>
+            <View style={style.tauben}>
+                <TaubeLeftSVG />
+                <TaubeRightSVG />
             </View>
-        );
-    }
+            <View style={style.signin}>
+            <OwnButton name="Registrieren" style={style.registerButton} onPress={() => navigation.navigate(PhoneNumber)}/>
+                <Text style={style.signinRegisterText}>Du bist schon registriert?</Text>
+                <Pressable style={style.signinButton}>
+                    <Text style={style.signinButtonText}>Anmelden</Text>
+                </Pressable>
+            </View>
+        </SafeAreaView>
+    );
 }
 
 const style = StyleSheet.create ( {
     contentRegister: {
         flex: 1,
+        top: '5%',
+        justifyContent: 'center',
         alignItems: 'center',
     },
     logoRegister: {
-        marginTop: 100,
+        marginTop: "10%",
         alignContent: 'center',
     },
     tauben: {
-        flexDirection: 'row',
+        alignItems: 'center',
         flex: 1,
-        justifyContent: 'center',
-        top: 50,
-    },
-    taubeLeft: {
-        left: -5,
-    }, 
-    taubeRight: {
-        right: -10,
-        marginTop: -25,
+        flexDirection: 'row',
     },
     signin: {
         textAlign: 'center',
-        marginBottom: 100,
-        position: 'absolute',
-        bottom: 0,
+        marginBottom: "10%",
+        justifyContent: 'center',
+        flex: 1,
     },
     signinRegisterText: {
         textAlign: 'center',
         fontSize: 16,
         marginTop: 20,
+        color: '#4C4C4C',
     },  
     signinButtonText: {
         color: '#5BCDBF',
