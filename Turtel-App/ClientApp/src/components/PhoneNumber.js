@@ -3,6 +3,9 @@ import {StyleSheet, View, Text, TextInput, SafeAreaView} from 'react-native';
 import {InputOutline} from 'react-native-input-outline';
 import OwnButton from './TurtelButton.js';
 import DropDownPicker from 'react-native-dropdown-picker';
+import BackButton from '../images/back_button.jsx';
+import LogoHeader from '../images/logo_header.jsx';
+import TaubeHelp from '../images/taube_help.jsx';
 
 export function  PhoneNumber({ navigation }) {
     const [open, setOpen] = useState(false);
@@ -15,6 +18,15 @@ export function  PhoneNumber({ navigation }) {
 
     return (
         <SafeAreaView style={style.phoneNumberPageStyle}>
+            <View style={style.backButton}>
+                <BackButton />
+            </View>
+            <View style={style.logoHeader}>
+                <LogoHeader />
+            </View>
+            <View style={style.taubeHelp}>
+                <TaubeHelp />
+            </View>
             <DropDownPicker 
                 placeholder='Vorwahl'
                 open={open}
@@ -39,6 +51,17 @@ const style = StyleSheet.create ( {
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
+    },
+    backButton: {
+        bottom: "22%",
+        right: "38%",
+    },
+    logoHeader: {
+        bottom: "28%",
+    },
+    taubeHelp: {
+        bottom: "34%",
+        left: "38%",
     },
     input: {
         height: 52,
