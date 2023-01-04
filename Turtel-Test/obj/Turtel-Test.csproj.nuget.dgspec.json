@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj": {}
+    "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-App\\Turtel-App.csproj": {
+    "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-App\\Turtel-App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-App\\Turtel-App.csproj",
+        "projectUniqueName": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-App\\Turtel-App.csproj",
         "projectName": "Turtel-App",
-        "projectPath": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-App\\Turtel-App.csproj",
-        "packagesPath": "C:\\Users\\Jack5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-App\\obj\\",
+        "projectPath": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-App\\Turtel-App.csproj",
+        "packagesPath": "C:\\Users\\noelt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jack5\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\noelt\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,10 +61,29 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -75,36 +92,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\noelt\\.dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj": {
+    "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj",
+        "projectUniqueName": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj",
         "projectName": "Turtel-Test",
-        "projectPath": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj",
-        "packagesPath": "C:\\Users\\Jack5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-Test\\obj\\",
+        "projectPath": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-Test\\Turtel-Test.csproj",
+        "packagesPath": "C:\\Users\\noelt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jack5\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\noelt\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-App\\Turtel-App.csproj": {
-                "projectPath": "C:\\Users\\Jack5\\source\\repos\\Turtel-App\\Turtel-App\\Turtel-App.csproj"
+              "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-App\\Turtel-App.csproj": {
+                "projectPath": "C:\\Users\\noelt\\OneDrive\\Dokumente\\GitHub\\Turtel-App\\Turtel-App\\Turtel-App.csproj"
               }
             }
           }
@@ -146,16 +161,31 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\noelt\\.dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
