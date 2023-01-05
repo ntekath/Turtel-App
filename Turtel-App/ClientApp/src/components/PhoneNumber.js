@@ -3,6 +3,7 @@ import {StyleSheet, View, Text, TextInput, SafeAreaView} from 'react-native';
 import {InputOutline} from 'react-native-input-outline';
 import OwnButton from './TurtelButton.js';
 import DropDownPicker from 'react-native-dropdown-picker';
+import {Onboarding} from './Onboarding/Onboarding';
 
 export function  PhoneNumber({ navigation }) {
     const [open, setOpen] = useState(false);
@@ -26,9 +27,9 @@ export function  PhoneNumber({ navigation }) {
                 setItems={setItems}
                 style={style.input}
             />
-            <InputOutline placeholder='Handynummer' style={style.input} fontColor="#4C4C4C"/>
+            <InputOutline placeholder='Handynummer' style={style.input}/>
             <Text style={style.textStyle}>Wir brauchen Deine Telefonnummer, um dich anzumelden.</Text>
-            <OwnButton name="Weiter" />
+            <OwnButton name="Weiter" onPress={() => navigation.navigate(Onboarding)} />
         </SafeAreaView>
         
     );
@@ -46,7 +47,7 @@ const style = StyleSheet.create ( {
         margin: 12,
         borderWidth: 1,
         borderRadius: 25,
-        borderColor: '#4C4C4C',
+        borderColor: '#000',
         justifyContent: 'center',
         alignSelf: 'center',
     },
